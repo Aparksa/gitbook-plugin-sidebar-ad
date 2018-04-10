@@ -1,13 +1,15 @@
 {% extends template.self %}
+{% block title %}{{ "LANGS_CHOOSE"|t }} · {{ super() }}{% endblock %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
 
 {% block book_sidebar %}
   {{ super() }}
   <div class="sidebar-addition">
             <p>
-            <img src="img/fr.png" alt="language" /> <a href="https://aparksa.gitlab.io/homelidays/_pdf/homelidays_fr.pdf">PDF FR</a>
-            </p>
-            <p>
-            <img src="img/en.png" alt="language" /> <a href="https://aparksa.gitlab.io/homelidays/_pdf/homelidays_en.pdf">PDF EN</a>
+            <img src="pdf.png" alt="pdf" /> <a href="{{"https://aparksa.gitlab.io/homelidays/_pdf/homelidays_"+(lang.id +".pdf"}}">{{ lang.title }}</a>
             </p>
       </div>
 {% endblock %}
