@@ -1,33 +1,25 @@
 {
-    "name": "gitbook-plugin-sidebar-ad",
-    "version": "0.0.4",
-    "description": "GitBook plugin for adding a small ad in the sidebar of your book",
+    "name": "gitbook-plugin-sidebar-pdf",
+    "version": "0.0.1",
+    "description": "GitBook plugin for adding link to pdf version in the sidebar of your book",
     "engines": {
         "gitbook": ">=3.0.0"
     },
     "license": "BSD",
     "repository": {
       "type": "git",
-      "url": "https://github.com/olasitarska/gitbook-plugin-sidebar-ad.git"
+      "url": "https://github.com/aparksa/gitbook-plugin-sidebar-pdf.git"
     },
     "gitbook": {
         "properties": {
             "imageUrl": {
                 "type": "string",
-                "description": "URL to image displayed in the ad",
-                "required": true
+                "description": "pdf icon link",
+                "required": false
             },
             "url": {
                 "type": "string",
-                "description": "Promoted URL"
-            },
-            "description": {
-                "type": "string",
-                "description": "Description next to the image"
-            },
-            "btnText": {
-                "type": "string",
-                "description": "Text for the call to action button"
+                "description": "URL of your published book"
             }
         }
     }
