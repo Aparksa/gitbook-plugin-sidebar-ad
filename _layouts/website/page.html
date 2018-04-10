@@ -7,8 +7,10 @@
 {% block book_sidebar %}
   {{ super() }}
   <div class="sidebar-addition">
+    {%  if lang in languages.list %}
             <p>
             <img src="pdf.png" alt="pdf" /> <a href="{{"https://aparksa.gitlab.io/homelidays/_pdf/homelidays_"+(lang.id +".pdf")}}">{{ lang.title }}</a>
             </p>
       </div>
+    {% endif %}
 {% endblock %}
